@@ -71,7 +71,7 @@ subprojects {
     }
     afterEvaluate {
         configure<SigningExtension> {
-            sign(configurations["archives"])
+            isRequired = false
         }
         tasks.findByName("shadowJar")?.also {
             tasks.named("assemble") { dependsOn(it) }
