@@ -1,7 +1,6 @@
 name: gradle-release-ci
 on:
   push:
-    tags: [ "v*" ]
 
 jobs:
   build:
